@@ -1,5 +1,5 @@
 ﻿using DesignPatterns.AbstractFactory.Furnitures.Contracts;
-using DesignPatterns.AbstractFactory.Furnitures.Implementations.Furnitures;
+using DesignPatterns.AbstractFactory.Furnitures.Implementations.Furnitures.Vintage;
 
 namespace DesignPatterns.AbstractFactory.Furnitures.Implementations
 {
