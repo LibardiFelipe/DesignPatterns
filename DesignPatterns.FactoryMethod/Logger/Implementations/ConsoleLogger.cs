@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.FactoryMethod.Logger.Contracts;
 
-namespace DesignPatterns.FactoryMethod.Logger.Implementations.ConsoleLogger
+namespace DesignPatterns.FactoryMethod.Logger.Implementations
 {
     public class ConsoleLogger : ILogger
     {
