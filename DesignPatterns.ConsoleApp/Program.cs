@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.FactoryMethod.Logger.Enums;
 using DesignPatterns.FactoryMethod.Logger.Implementations.Factory;
+using DesignPatterns.Singleton.CredentialsManager;
 
 namespace DesignPatterns.ConsoleApp
 {
@@ -15,7 +16,11 @@ namespace DesignPatterns.ConsoleApp
             fileLog.Log("Hello! This message should be saved on a file.");
             #endregion
 
-
+            #region Singleton
+            LazyCredentialsManager.Instance.Login("User", "Password");
+            var (Username, Password) = LazyCredentialsManager.Instance.GetCredentials();
+            consoleLog.Log($"Username: {Username} | Password: {Password}");
+            #endregion
         }
     }
 }
